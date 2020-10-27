@@ -1,7 +1,7 @@
 import React from 'react';
 import './item.styles.scss'
 
-const Item = ({ id, name, price, imageUrl }) => (
+const Item = ({ name, price, imageUrl }) => (
     <div className='collection-item'>
         <div className='image'
             style=
@@ -11,7 +11,7 @@ const Item = ({ id, name, price, imageUrl }) => (
         
         <div className='collection-footer'>
             <span className='name'>{name}</span>
-            <span className='price'>{price}</span>
+            <span className='price'>{`$${price}`}</span>
         </div>
     </div>
 )
